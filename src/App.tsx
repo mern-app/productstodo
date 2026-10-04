@@ -1,14 +1,13 @@
-//import { useState } from 'react'
+import { useState } from "react";
 import "./App.css";
 import ProductPage from "./pages/product-page";
-import products from "./data/products.json";
+import productsData from "./data/products.json";
+import type Product from "./interface/products";
 
 function App() {
-    return (
-        <>
-            <ProductPage products={products} />
-        </>
-    );
+    const [products, setProducts] = useState<Product[]>(productsData);
+
+    return <ProductPage products={products} setProducts={setProducts} />;
 }
 
 export default App;

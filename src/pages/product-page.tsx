@@ -1,18 +1,20 @@
-import { useState } from "react";
+import type { Dispatch, SetStateAction } from "react";
 import type Product from "../interface/products";
 
-export default function ProductPage({
-    products: initialProducts,
-}: {
+type ProductPageProps = {
     products: Product[];
-}) {
-    const [products, setProducts] = useState<Product[]>(initialProducts);
+    setProducts: Dispatch<SetStateAction<Product[]>>;
+};
 
+export default function ProductPage({
+    products,
+    setProducts,
+}: ProductPageProps) {
     const cartProducts = products.filter((product) => product.in_cart);
 
     function handleAddToCart(productId: string) {
-        setProducts((prev) =>
-            prev.map((product) =>
+        setProducts((prevProducts) =>
+            prevProducts.map((product) =>
                 product.id === productId
                     ? {
                           ...product,
@@ -25,8 +27,8 @@ export default function ProductPage({
     }
 
     function handleRemoveFromCart(productId: string) {
-        setProducts((prev) =>
-            prev.map((product) =>
+        setProducts((prevProducts) =>
+            prevProducts.map((product) =>
                 product.id === productId
                     ? { ...product, in_cart: false, quantity: 0 }
                     : product,
