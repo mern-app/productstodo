@@ -9,8 +9,8 @@
         "created_at": "Sun, 10/15/2023",
         "updated_at": "Sun, 10/15/2023",
         "product_category": "Furniture",
-        "in_cart": true,
-        "quantity": 2
+        "in_cart": false,
+        "quantity": 0
     },
     {
         "id": "8160bd31-ecbd-4649-b1d9-1ceb08de1194",
@@ -35,8 +35,8 @@
         "created_at": "Sun, 10/15/2023",
         "updated_at": "Sun, 10/15/2023",
         "product_category": "Travel Accessories",
-        "in_cart": true,
-        "quantity": 1
+        "in_cart": false,
+        "quantity": 0
     },
     {
         "id": "2f66eece-d079-440e-b9d4-726311a484e8",
@@ -100,8 +100,8 @@
         "created_at": "Sun, 10/15/2023",
         "updated_at": "Sun, 10/15/2023",
         "product_category": "Toys",
-        "in_cart": true,
-        "quantity": 5
+        "in_cart": false,
+        "quantity": 0
     },
     {
         "id": "19cdb4c7-13e4-42a4-afb7-cb55559fbb07",
@@ -114,7 +114,7 @@
         "updated_at": "Sun, 10/15/2023",
         "product_category": "Musical Instruments",
         "in_cart": false,
-        "quantity": 1
+        "quantity": 0
     },
     {
         "id": "569de0f6-fdd1-4695-af9d-6f25ae58c555",
