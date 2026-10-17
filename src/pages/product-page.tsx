@@ -11,8 +11,12 @@ export default function ProductPage({
     setProducts,
 }: ProductPageProps) {
     const cartProducts = products.filter((product) => product.in_cart);
+    const cartTotal = cartProducts.reduce(
+        (total, product) => total + product.price * product.quantity,
+        0,
+    );
 
-    function handleAddToCart(productId: string) {
+    function handleAddToCart(productId: number) {
         setProducts((prevProducts) =>
             prevProducts.map((product) =>
                 product.id === productId
@@ -26,13 +30,32 @@ export default function ProductPage({
         );
     }
 
-    function handleRemoveFromCart(productId: string) {
+    function handleRemoveFromCart(productId: number) {
         setProducts((prevProducts) =>
             prevProducts.map((product) =>
                 product.id === productId
                     ? { ...product, in_cart: false, quantity: 0 }
                     : product,
             ),
+        );
+    }
+
+    function handleChangeCountToCart(productId: number, type: "inc" | "dec") {
+        setProducts((prevProducts) =>
+            prevProducts.map((product) => {
+                if (product.id !== productId) return product;
+
+                const quantity = Math.max(
+                    0,
+                    product.quantity + (type === "inc" ? 1 : -1),
+                );
+
+                return {
+                    ...product,
+                    quantity,
+                    in_cart: quantity > 0,
+                };
+            }),
         );
     }
 
@@ -47,18 +70,49 @@ export default function ProductPage({
                             <h2>{product.name}</h2>
                             <p>{product.description}</p>
                             <p>
-                                {product.product_category} ·{" "}
-                                {product.manufacturer} ·{" "}
+                                {product.category}
                                 <strong>${product.price}</strong>
                             </p>
-                            <button
+                            {/* <button
                                 type="button"
                                 onClick={() => handleAddToCart(product.id)}
                             >
                                 {product.in_cart
                                     ? `Add another (${product.quantity} in cart)`
                                     : "Add to Cart"}
-                            </button>
+                            </button> */}
+                            {product.in_cart ? (
+                                <div>
+                                    <button
+                                        onClick={() =>
+                                            handleChangeCountToCart(
+                                                product.id,
+                                                "dec",
+                                            )
+                                        }
+                                    >
+                                        -
+                                    </button>
+                                    {product.quantity}
+                                    <button
+                                        onClick={() =>
+                                            handleChangeCountToCart(
+                                                product.id,
+                                                "inc",
+                                            )
+                                        }
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            ) : (
+                                <button
+                                    type="button"
+                                    onClick={() => handleAddToCart(product.id)}
+                                >
+                                    Add to Cart
+                                </button>
+                            )}
                         </article>
                     ))}
                 </div>
@@ -75,12 +129,13 @@ export default function ProductPage({
                                 <img src={product.image} alt={product.name} />
                                 <h2>{product.name}</h2>
                                 <p>{product.description}</p>
-                                <p>
-                                    {product.product_category} ·{" "}
-                                    {product.manufacturer} ·{" "}
-                                    <strong>${product.price}</strong>
-                                </p>
+                                <p>{product.category}</p>
                                 <p>Quantity: {product.quantity}</p>
+                                <p>
+                                    <strong>
+                                        ${product.price * product.quantity}
+                                    </strong>
+                                </p>
                                 <button
                                     type="button"
                                     onClick={() =>
@@ -91,6 +146,9 @@ export default function ProductPage({
                                 </button>
                             </article>
                         ))}
+                        <div>
+                            <strong>Cart total: ${cartTotal.toFixed(2)}</strong>
+                        </div>
                     </div>
                 )}
             </aside>

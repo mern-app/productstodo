@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "category": "Electronics",
+        "price": 1499,
+        "originalPrice": 2499,
+        "description": "Comfortable wireless headphones with clear sound and long battery life.",
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80",
+        "badge": "Best Seller",
+        "in_cart": false,
+        "quantity": 0
+    },
+    {
+        "id": 2,
+        "name": "Smart Watch",
+        "category": "Electronics",
+        "price": 2299,
+        "originalPrice": 3999,
+        "description": "Smart watch with fitness tracking and notifications.",
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80",
+        "badge": "Popular",
+        "in_cart": false,
+        "quantity": 0
+    },
+    {
+        "id": 3,
+        "name": "Running Shoes",
+        "category": "Footwear",
+        "price": 1899,
+        "originalPrice": 2999,
+        "description": "Lightweight running shoes designed for everyday comfort.",
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80",
+        "badge": "Sale",
+        "in_cart": false,
+        "quantity": 0
+    },
+    {
+        "id": 4,
+        "name": "Classic Backpack",
+        "category": "Bags",
+        "price": 999,
+        "originalPrice": 1599,
+        "description": "Durable everyday backpack with spacious compartments.",
+        "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=500&q=80",
+        "badge": "New",
+        "in_cart": false,
+        "quantity": 0
+    },
+    {
+        "id": 5,
+        "name": "Casual T-Shirt",
+        "category": "Clothing",
+        "price": 599,
+        "originalPrice": 999,
+        "description": "Soft cotton casual t-shirt suitable for everyday wear.",
+        "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80",
+        "badge": "Trending",
+        "in_cart": false,
+        "quantity": 0
+    },
+    {
+        "id": 6,
+        "name": "Sunglasses",
+        "category": "Accessories",
+        "price": 799,
+        "originalPrice": 1299,
+        "description": "Stylish sunglasses with UV protection.",
+        "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80",
+        "badge": "Sale",
+        "in_cart": false,
+        "quantity": 0
+    },
+    {
+        "id": 7,
+        "name": "Leather Wallet",
+        "category": "Accessories",
+        "price": 699,
+        "originalPrice": 1199,
+        "description": "Compact leather wallet with multiple card slots.",
+        "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=500&q=80",
+        "badge": "New",
+        "in_cart": false,
+        "quantity": 0
+    },
+    {
+        "id": 8,
+        "name": "Coffee Mug",
+        "category": "Home",
+        "price": 349,
+        "originalPrice": 599,
+        "description": "Minimal ceramic coffee mug perfect for home or office.",
+        "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=500&q=80",
+        "badge": "Popular",
+        "in_cart": false,
+        "quantity": 0
+    },
+    {
+        "id": 9,
+        "name": "Mechanical Keyboard",
+        "category": "Electronics",
+        "price": 2499,
+        "originalPrice": 3499,
+        "description": "Mechanical keyboard with tactile switches.",
+        "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=500&q=80",
+        "badge": "Best Seller",
+        "in_cart": false,
+        "quantity": 0
+    },
+    {
+        "id": 10,
+        "name": "Desk Lamp",
+        "category": "Home",
+        "price": 899,
+        "originalPrice": 1499,
+        "description": "Modern LED desk lamp with adjustable brightness.",
+        "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=500&q=80",
+        "badge": "New",
+        "in_cart": false,
+        "quantity": 0
+    }
+]

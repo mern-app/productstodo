@@ -8,7 +8,7 @@
         "manufacturer": "O'Hara-Wolf",
         "created_at": "Sun, 10/15/2023",
         "updated_at": "Sun, 10/15/2023",
-        "product_category": "Furniture",
+        "category": "Furniture",
         "in_cart": false,
         "quantity": 0
     },
@@ -21,7 +21,7 @@
         "manufacturer": "Ebert LLC",
         "created_at": "Sun, 10/15/2023",
         "updated_at": "Sun, 10/15/2023",
-        "product_category": "Garden Tools",
+        "category": "Garden Tools",
         "in_cart": false,
         "quantity": 0
     },
@@ -34,7 +34,7 @@
         "manufacturer": "Jones-Wiza",
         "created_at": "Sun, 10/15/2023",
         "updated_at": "Sun, 10/15/2023",
-        "product_category": "Travel Accessories",
+        "category": "Travel Accessories",
         "in_cart": false,
         "quantity": 0
     },
@@ -47,7 +47,7 @@
         "manufacturer": "Jast Ltd",
         "created_at": "Sun, 10/15/2023",
         "updated_at": "Sun, 10/15/2023",
-        "product_category": "Baby Products",
+        "category": "Baby Products",
         "in_cart": false,
         "quantity": 0
     },
@@ -60,7 +60,7 @@
         "manufacturer": "Hamill-Reichel",
         "created_at": "Sun, 10/15/2023",
         "updated_at": "Sun, 10/15/2023",
-        "product_category": "Art and Crafts",
+        "category": "Art and Crafts",
         "in_cart": false,
         "quantity": 0
     },
@@ -73,7 +73,7 @@
         "manufacturer": "Wuckert, Cruickshank and Toy",
         "created_at": "Sun, 10/15/2023",
         "updated_at": "Sun, 10/15/2023",
-        "product_category": "Health Supplements",
+        "category": "Health Supplements",
         "in_cart": false,
         "quantity": 0
     },
@@ -86,7 +86,7 @@
         "manufacturer": "Fadel, Okuneva and Raynor",
         "created_at": "Sun, 10/15/2023",
         "updated_at": "Sun, 10/15/2023",
-        "product_category": "Books",
+        "category": "Books",
         "in_cart": false,
         "quantity": 0
     },
@@ -99,7 +99,7 @@
         "manufacturer": "Rice Group",
         "created_at": "Sun, 10/15/2023",
         "updated_at": "Sun, 10/15/2023",
-        "product_category": "Toys",
+        "category": "Toys",
         "in_cart": false,
         "quantity": 0
     },
@@ -112,7 +112,7 @@
         "manufacturer": "Sawayn PLC",
         "created_at": "Sun, 10/15/2023",
         "updated_at": "Sun, 10/15/2023",
-        "product_category": "Musical Instruments",
+        "category": "Musical Instruments",
         "in_cart": false,
         "quantity": 0
     },
@@ -125,7 +125,7 @@
         "manufacturer": "Lebsack Inc",
         "created_at": "Sun, 10/15/2023",
         "updated_at": "Sun, 10/15/2023",
-        "product_category": "Automotive Parts",
+        "category": "Automotive Parts",
         "in_cart": false,
         "quantity": 0
     }
